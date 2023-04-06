@@ -26,7 +26,7 @@ public class CitizenController {
 	}
 	
 	
-	@PostMapping(path="/save")
+	//@PostMapping(path="/save")
 	public ResponseEntity<Citizen> getName(@RequestBody Citizen ncitizen){
 		Citizen citizen=repo.save( ncitizen);
 		return new ResponseEntity<>(citizen,HttpStatus.OK);
