@@ -24,6 +24,8 @@ public class CitizenController {
 	public ResponseEntity<String> getName(){
 		return new ResponseEntity<>("hello to the world",HttpStatus.OK);
 	}
+	
+	
 	@PostMapping(path="/save")
 	public ResponseEntity<Citizen> getName(@RequestBody Citizen ncitizen){
 		Citizen citizen=repo.save( ncitizen);
