@@ -20,7 +20,7 @@ public class CitizenController {
 	@Autowired
 	CitizenRepository repo;
 	
-	@GetMapping(path="/hello")
+	//@GetMapping(path="/hello")
 	public ResponseEntity<String> getName(){
 		return new ResponseEntity<>("hello to the world",HttpStatus.OK);
 	}
